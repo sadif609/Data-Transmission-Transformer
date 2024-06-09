@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Transfer Transmission</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="gub.jpg" alt="GUB Logo" class="logo">
+            <h1>Data Transfer Transmission</h1>
+            <h4>Faculty: Rusmita Halim Chaity | Sub: CSE(308)</h4>
+        </header>
+
+        <!-- IPv4 to Binary Section -->
+        <div class="section">
+            <h2>IPv4 to Binary Conversion</h2>
+            <label for="ipv4Input">Enter IPv4 address:</label>
+            <input type="text" id="ipv4Input" class="input-field">
+            <button onclick="ipv4ToBinary()" class="action-button">Convert to Binary</button>
+            <p id="ipv4ToBinaryResult" class="output-text">Binary IP: </p>
+        </div>
+
+        <!-- Binary to IPv4 Section -->
+        <div class="section">
+            <h2>Binary to IPv4 Conversion</h2>
+            <label for="binaryIpInput">Enter Binary IP address:</label>
+            <input type="text" id="binaryIpInput" class="input-field">
+            <button onclick="binaryToIpv4()" class="action-button">Convert to IPv4</button>
+            <p id="binaryToIpv4Result" class="output-text">IPv4 address: </p>
+        </div>
+
+        <!-- Bit Stuffing Section -->
+        <div class="section">
+            <h2>Bit Stuffing and Destuffing</h2>
+            <label for="bitInput">Enter Data Sequence:</label>
+            <input type="text" id="bitInput" class="input-field">
+            <label for="bitFlag">Enter Flag:</label>
+            <input type="text" id="bitFlag" class="input-field">
+            <button onclick="bitStuffing()" class="action-button">Stuff Bits</button>
+            <p id="bitStuffingResult" class="output-text">Stuffed Data: </p>
+            <p id="bitDestuffingResult" class="output-text">Destuffed Data: </p>
+        </div>
+
+        <!-- Character Stuffing Section -->
+        <div class="section">
+            <h2>Character Stuffing and Destuffing</h2>
+            <label for="charInput">Enter Data Sequence:</label>
+            <input type="text" id="charInput" class="input-field">
+            <label for="charFlag">Enter Flag:</label>
+            <input type="text" id="charFlag" class="input-field">
+            <label for="charEscape">Enter Escape Character:</label>
+            <input type="text" id="charEscape" class="input-field">
+            <button onclick="charStuffing()" class="action-button">Stuff Characters</button>
+            <p id="charStuffingResult" class="output-text">Stuffed Data: </p>
+            <p id="charDestuffingResult" class="output-text">Destuffed Data: </p>
+        </div>
+
+        <!-- Checksum Section -->
+        <div class="section">
+            <h2>Checksum Calculation</h2>
+            <label for="checksumInput">Enter Data:</label>
+            <input type="text" id="checksumInput" class="input-field">
+            <button onclick="calculateChecksum()" class="action-button">Calculate Checksum</button>
+            <p id="checksumResult" class="output-text">Checksum: </p>
+            <button onclick="receiveData()" class="action-button">Receive Data with Checksum</button>
+            <p id="receivedDataResult" class="output-text">Received Data: </p>
+        </div>
+
+        <footer>
+            <p>Md Ashiqul Islam . ID: 212002056</p>
+            <p>Md Taiab . ID: 212002087</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
